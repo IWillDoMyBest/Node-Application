@@ -1,0 +1,7 @@
+{% extends "./layouts/layout.nunjucks" %}
+
+{% block body %}
+
+    <h1>Node-Application works!</h1>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Title </title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    </head>
+
+    <body>
+        {% block body %}
+            <!-- Code will be inserted here -->
+        {% endblock %}
+    </body>
+</html>

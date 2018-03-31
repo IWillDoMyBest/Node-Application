@@ -1,0 +1,7 @@
+{% extends "./layouts/layout.nunjucks" %}
+
+{% block body %}
+
+    <!-- Insert code here -->
+
+{% endblock %}
