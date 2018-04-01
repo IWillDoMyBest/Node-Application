@@ -35,7 +35,7 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({extended: false}));
 
 //Routes configuration
-app.use(require("./routes/index"));
+app.use(require("./routes/main-routes/index"));
 
 //Socket configuration
 var io = socket(server);
