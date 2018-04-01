@@ -4,9 +4,13 @@ const express_validator = require("express-validator");
 const path = require("path");
 const body_parser = require("body-parser");
 const nunjucks = require("nunjucks");
+const socket = require("socket.io");
 
 //Main application
 var app = express();
+var server = app.listen(3000, () => {
+    console.log("Server is started..");
+});
 
 //Static configuration
 app.use(express.static("public"));
@@ -33,6 +37,6 @@ app.use(body_parser.urlencoded({extended: false}));
 //Routes configuration
 app.use(require("./routes/index"));
 
-app.listen(3000, () => {
-    console.log("Server is started..");
-});
+//Socket configuration
+var io = socket(server);
+var socket_handler = require("./socket.io/socket");
