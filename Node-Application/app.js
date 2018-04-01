@@ -39,4 +39,4 @@ app.use(require("./routes/main-routes/index"));
 
 //Socket configuration
 var io = socket(server);
-var socket_handler = require("./socket.io/socket");
+var socket_handler = require("./socket.io/socket")(io);
