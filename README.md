@@ -11,7 +11,8 @@ List of stuff that is included and already handled:
     * routes, public (javascript, stylesheet)
     * view engine (nunjucks)
     * nodemon (Making your project autorestart after everychange)
-    * shortcuts to create new (routes, nunjucks)
+    * shortcuts to create new (routes, views)
+    * jQuery, socket.io
     * middleware (authorization)
 
 1.) Run the Node.bat file to create your new project.
